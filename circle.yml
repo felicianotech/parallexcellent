@@ -1,0 +1,8 @@
+test:
+  override:
+    - echo This is a better test runner!
+deployment:
+  prod:
+    branch: master
+    commands:
+      - scp circle.yml ubuntu@ec2-52-23-160-120.compute-1.amazonaws.com:~/circle.yml
